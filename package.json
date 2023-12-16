@@ -2,11 +2,17 @@
   "name": "@aiobisoft/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint --ext jsx,tsx,ts,js,json,html"
+  },
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/types": "^18.4.3",
     "@nx/cypress": "17.3.0-canary.20231216-71ce32a",
     "@nx/detox": "17.3.0-canary.20231216-71ce32a",
     "@nx/jest": "17.3.0-canary.20231216-71ce32a",
@@ -37,6 +43,7 @@
     "eslint": "^8.56.0",
     "eslint-config-next": "14.0.4",
     "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.3",
     "jest": "^29.4.1",
     "jest-circus": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
